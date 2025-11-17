@@ -5,17 +5,23 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Yousset Studios • Unity Publisher</title>
   <meta name="description" content="Official publisher website for Unity assets, demos, and contact information.">
-  <meta name="theme-color" content="#0b74de">
+  <meta name="theme-color" content="#1f2937">
   <style>
-    :root{--bg:#f7f9fc;--card:#fff;--muted:#6b7280;--accent:#0b74de}
+    :root{
+      --bg:#121212;
+      --card:#1f2937;
+      --muted:#9ca3af;
+      --accent:#0b74de;
+      --text:#f9fafb;
+    }
     *{box-sizing:border-box}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; margin:0; background:var(--bg); color:#111}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; margin:0; background:var(--bg); color:var(--text)}
     .wrap{max-width:980px;margin:36px auto;padding:20px}
     header{display:flex;gap:16px;align-items:center}
     header img{width:72px;height:72px;border-radius:12px;object-fit:cover}
     h1{margin:0;font-size:1.6rem}
     .sub{color:var(--muted);margin-top:6px}
-    .card{background:var(--card);border-radius:12px;padding:18px;margin-top:18px;box-shadow:0 6px 18px rgba(13,20,30,0.06)}
+    .card{background:var(--card);border-radius:12px;padding:18px;margin-top:18px;box-shadow:0 6px 18px rgba(0,0,0,0.6)}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
     .asset{display:flex;flex-direction:column}
     .asset img{width:100%;height:140px;object-fit:cover;border-radius:8px}
@@ -24,7 +30,7 @@
     .meta{margin-top:10px;color:var(--muted);font-size:0.95rem}
     a.btn{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;margin-top:10px}
     form label{display:block;margin-top:10px;font-size:0.95rem}
-    input,textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #e4e7eb;font-size:0.95rem}
+    input,textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid #374151;background:#1f2937;color:var(--text);font-size:0.95rem}
     button[type=submit]{margin-top:10px;padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer}
     footer{margin-top:20px;color:var(--muted);font-size:0.9rem;text-align:center}
     .split{display:flex;gap:12px;flex-wrap:wrap}
@@ -36,9 +42,9 @@
     <header>
       <img src="images/logo.png" alt="Logo (replace images/logo.png)">
       <div>
-        <h1>Youssef Tamer / Yousset Studio</h1>
+        <h1>Youssef Tamer / Yousset Studios</h1>
         <div class="sub">Unity asset publisher • Multiplayer systems • Controllers • Tools</div>
-        <div class="sub" style="margin-top:8px">Contact: <a href="mailto:email@example.com">email@example.com</a></div>
+        <div class="sub" style="margin-top:8px">Contact: <a href="mailto:yousseftq77@gmail.com">yousseftq77@gmail.com</a></div>
       </div>
     </header>
 
@@ -52,11 +58,11 @@
 
     <section class="card" id="portfolio">
       <h2>Portfolio & Assets</h2>
-      <p style="color:var(--muted)">Below are my published assets and demos. Each card links to the store page or demo (replace links with real URLs).</p>
+      <p style="color:var(--muted)">Below are my published assets and demos. Each card links to the store page or demo.</p>
 
       <div class="grid">
         <div class="asset">
-          <img src="images/aquawar.png" alt="AquaWar Multiplayer screenshot">
+          <img src="images/123.png" alt="AquaWar Multiplayer screenshot">
           <h3>AquaWar Multiplayer</h3>
           <p>Multiplayer FPS with synchronized networked physics and support for PUN2 & Netcode.</p>
           <div class="split">
@@ -66,18 +72,9 @@
         </div>
 
         <div class="asset">
-          <img src="images/ultimate-fps.png" alt="Ultimate FPS Controller screenshot">
+          <img src="images/ChatGPT Image Nov 4, 2025, 04_33_15 PM.png" alt="Ultimate FPS Controller screenshot">
           <h3>Ultimate FPS Controller</h3>
           <p>Full-featured controller with recoil, weapon rigs, and network-ready inputs.</p>
-          <div class="split">
-            <a class="btn" href="https://your-asset-store-link.example" target="_blank" rel="noopener">Store page</a>
-          </div>
-        </div>
-
-        <div class="asset">
-          <img src="images/other.png" alt="Other asset screenshot">
-          <h3>Editor Utility Pack</h3>
-          <p>Tools to speed up common editor tasks and workflow for Unity creators.</p>
           <div class="split">
             <a class="btn" href="https://your-asset-store-link.example" target="_blank" rel="noopener">Store page</a>
           </div>
@@ -99,7 +96,6 @@
       <h2>Contact</h2>
       <p style="color:var(--muted)">Use the form below or email me directly. I check messages regularly and respond within ٢–٣ business days.</p>
 
-      <!-- Replace action with your Formspree form action (https://formspree.io/f/yourformid) -->
       <form method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID" id="contactForm">
         <label for="name">Name</label>
         <input id="name" name="name" required>
@@ -110,7 +106,6 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <!-- Hidden field Unity reviewers like to see: subject + where it came from -->
         <input type="hidden" name="_subject" value="Website contact — Unity Publisher check">
         <input type="hidden" name="source" value="github-pages">
 
@@ -120,20 +115,13 @@
       <p style="margin-top:10px;color:var(--muted)">Or email: <a href="mailto:yousseftq77@gmail.com">yousseftq77@gmail.com</a></p>
     </section>
 
-    <section class="card" id="support">
-      <h2>Support & Documentation</h2>
-      <p style="color:var(--muted)">Each asset includes a support email and a GitHub issue link for bug reports and feature requests.</p>
-      <p style="color:var(--muted)">Documentation: <a href="docs/README.pdf" target="_blank">Download PDF</a> (add real docs file)</p>
-    </section>
-
     <footer>
-      © <strong>Youssef Tamer / Yousset Studio</strong> — Publisher website for Unity assets. Last updated: <!-- edit date --> 
+      © <strong>Youssef Tamer / Yousset Studios</strong> — Publisher website for Unity assets. Last updated: <!-- edit date --> 
       <div style="margin-top:6px;color:var(--muted);font-size:0.88rem">Privacy: contact email visible; no tracking scripts. Demo builds hosted externally.</div>
     </footer>
   </div>
 
   <script>
-    // small UX: show a friendly message after form submit (Formspree redirects or returns 200)
     (function(){
       var form = document.getElementById('contactForm');
       form.addEventListener('submit', function(){
